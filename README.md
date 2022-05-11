@@ -1,6 +1,6 @@
 # Introduction
 
-A simple JSON API application made in ASP.NET (C#) & Sqlite that exposes two endpoints accepting GET requests:
+A simple JSON API application made in **ASP.NET Core 6.0** (C#) & **Sqlite** that exposes two endpoints accepting GET requests:
 
 * `random` - responds with a `Link` (URL) & `ImageData` (Base64) of a random image from a subreddit's "new" section. The subreddit is set in the app configuration.
 * `history` - responds with a list of `Link`s and `Timestamp`s that the app has responded with.
@@ -17,6 +17,8 @@ Application can be configured in `appsettings.json`:
 All mentioned entries **must** be present, otherwise the application will raise a *MissingConfigurationException*.
 
 # Running
+
+*This application requires .NET SDK >6.0.104.*
 
 ## Running from executable
 ```bash
